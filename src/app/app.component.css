@@ -1,5 +1,4 @@
-#s1{
-background-color:red;
-padding:20px;
-text-decoration-line:block;
+h1
+{
+  border:2px solid red;
 }
