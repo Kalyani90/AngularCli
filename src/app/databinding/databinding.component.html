@@ -1,0 +1,53 @@
+<div class="row card">
+  <div class="card-block">
+    <h1 class="card-title">Data binding</h1>
+  </div>
+</div>
+<div class="row card">
+  <div class="col-md-12">
+    <h4 class="text-muted"> I have {{carNm}}</h4>
+  </div>
+</div>
+<div class="row card">
+  <div class="col-md-12">
+    <h4 class="text-muted"> I have {{carNm.toUpperCase()}}</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn"> 10 square is {{ 10 * 10 }}</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="{{ipTyp}}" value="Okay">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="ipTyp" value="Okay">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="'button'" value="Okay">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="Date" (click)="chDt()">
+    {{dt}}
+  </div>
+</div>
+
+<div class="row" [class.jumbotron]="isJumbo">
+  <div class="col-md-12">
+    <input type="button" value="Classes" (click)="isJumbo=!isJumbo">
+  </div>
+</div>
+
+<div class="row" [style.border]="myBrd">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="myBrd"> {{myBrd}}
+  </div>
+</div>

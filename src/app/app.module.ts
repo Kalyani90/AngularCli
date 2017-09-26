@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// tslint:disable-next-line:import-spacing
+import {FormsModule}  from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
@@ -7,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { NavbarComponent } from './banner/navbar.component';
 import { JumboComponent } from './banner/jumbo.component';
 import { RowsmarketingComponent } from './banner/rowsmarketing.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 
 @NgModule({
@@ -16,10 +20,12 @@ import { RowsmarketingComponent } from './banner/rowsmarketing.component';
     BannerComponent,
     NavbarComponent,
     JumboComponent,
-    RowsmarketingComponent
+    RowsmarketingComponent,
+    DatabindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
